@@ -1,0 +1,11 @@
+2021-04-19 14:36:19,934 INFO j.j.p.PrimeiroProjetoSpringbatchApplication [main] Starting PrimeiroProjetoSpringbatchApplication using Java 15.0.2 on NITRO5 with PID 16876 (C:\Users\Jauri\DEV\SPRING_BATCH\primeiro-projeto-springbatch\target\classes started by Jauri in C:\Users\Jauri\DEV\SPRING_BATCH\primeiro-projeto-springbatch)
+2021-04-19 14:36:19,938 INFO j.j.p.PrimeiroProjetoSpringbatchApplication [main] The following profiles are active: dev
+2021-04-19 14:36:20,594 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2021-04-19 14:36:20,920 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-04-19 14:36:21,017 INFO o.s.b.c.r.s.JobRepositoryFactoryBean [main] No database type set, using meta data indicating: MYSQL
+2021-04-19 14:36:21,209 INFO o.s.b.c.l.s.SimpleJobLauncher [main] No TaskExecutor has been set, defaulting to synchronous executor.
+2021-04-19 14:36:21,309 INFO j.j.p.PrimeiroProjetoSpringbatchApplication [main] Started PrimeiroProjetoSpringbatchApplication in 1.737 seconds (JVM running for 2.773)
+2021-04-19 14:36:21,502 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=batchProcessing]] launched with the following parameters: [{run.id=12, nome=Jauri}]
+2021-04-19 14:36:21,561 INFO o.s.b.c.j.SimpleStepHandler [main] Executing step: [batchExecute]
+2021-04-19 14:36:21,601 INFO o.s.b.c.s.AbstractStep [main] Step: [batchExecute] executed in 40ms
+2021-04-19 14:36:21,629 INFO o.s.b.c.l.s.SimpleJobLauncher [main] Job: [SimpleJob: [name=batchProcessing]] completed with the following parameters: [{run.id=12, nome=Jauri}] and the following status: [COMPLETED] in 99ms

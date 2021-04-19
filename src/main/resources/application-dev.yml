@@ -12,3 +12,4 @@ app:
     password: 123456
   batch:
     initialize-schema: always
+
