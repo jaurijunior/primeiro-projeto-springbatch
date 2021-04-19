@@ -1,23 +1,23 @@
 package jauri.junior.primeiroprojetospringbatch.config;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
-import org.springframework.core.io.FileSystemResource;
+import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
+@Profile(value = { "qa", "prod" })
+@PropertySource(value = "file:./config/application-${spring.profiles.active}.yml", ignoreResourceNotFound = true)
 public class PropsConfig {
-	
+
 	/*
-	 * O Spring Boot por padrão procura as configurações em FileSystemResource informado
+	 * OPCAO PARA INFORMAR O APPLICATION
+	 * EM UM LOCAL DIFERENTE DO PADRAO DO SPRING BOOT
 	 */
-	/*
-	 * @Bean public PropertySourcesPlaceholderConfigurer config() {
-	 * PropertySourcesPlaceholderConfigurer placeholderConfig = new
-	 * PropertySourcesPlaceholderConfigurer(); placeholderConfig.setLocation(new
-	 * FileSystemResource("./job/config/applictaion.yml")); return
-	 * placeholderConfig; }
-	 */
-	
+	/* @Bean
+	public PropertySourcesPlaceholderConfigurer config() {
+		PropertySourcesPlaceholderConfigurer placeholderConfig = new PropertySourcesPlaceholderConfigurer();
+		placeholderConfig.setLocation(new FileSystemResource("./job/config/applictaion.yml"));
+		return placeholderConfig;
+	}*/
 
 }
